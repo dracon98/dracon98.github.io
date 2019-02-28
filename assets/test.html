@@ -1,43 +1,105 @@
 <!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
-<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
-<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
-<head>
-    <title>Responsive Portfolio Template for Developers</title>
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Responsive HTML5 Website Landing Page for Developers">
-    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">
-    <link rel="shortcut icon" href="favicon.ico">
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <!-- Global CSS -->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
-    <!-- Plugins CSS -->
-    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
-
-    <!-- github calendar css -->
-    <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar.css"
-/>
-    <!-- github acitivity css -->
-    <link rel="stylesheet" href="assets/plugins/github-activity/src/github-activity.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
-
-    <!-- Theme CSS -->
-    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+<html>
+        <head>
+                <title>Responsive Portfolio Template for Developers</title>
+                <!-- Meta -->
+                <meta charset="utf-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta name="description" content="Responsive HTML5 Website Landing Page for Developers">
+                <meta name="author" content="Xiaoying Riley at 3rd Wave Media">
+                <link rel="shortcut icon" href="favicon.ico">
+                <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+                <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+                <!-- Global CSS -->
+                <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+                <!-- Plugins CSS -->
+                <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+            
+                <!-- github calendar css -->
+                <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar.css"
+            />
+                <!-- github acitivity css -->
+                <link rel="stylesheet" href="assets/plugins/github-activity/src/github-activity.css">
+                <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+            
+                <!-- Theme CSS -->
+                <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+                <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+                <!--[if lt IE 9]>
+                  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+                  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+                <![endif]-->
+            
+            </head><head>
+                    <title>Responsive Portfolio Template for Developers</title>
+                    <!-- Meta -->
+                    <meta charset="utf-8">
+                    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <meta name="description" content="Responsive HTML5 Website Landing Page for Developers">
+                    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">
+                    <link rel="shortcut icon" href="favicon.ico">
+                    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+                    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+                    <!-- Global CSS -->
+                    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+                    <!-- Plugins CSS -->
+                    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+                
+                    <!-- github calendar css -->
+                    <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar.css"
+                />
+                    <!-- github acitivity css -->
+                    <link rel="stylesheet" href="assets/plugins/github-activity/src/github-activity.css">
+                    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+                
+                    <!-- Theme CSS -->
+                    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+                    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+                    <!--[if lt IE 9]>
+                      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+                      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+                    <![endif]-->
+                
+                </head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+    /*if($("#div1").visibility='none'){
+        $('body').css('overflow-y', 'auto');
+    }*/
+    $("#div1").click(function(){
+        $("#div1").fadeOut();
+        $('body').css('overflow-y', 'auto');
+    });
+});
+</script>
+<style>
+    #div1{
+        position:absolute;
+        z-index: 1;
+        background-color:silver;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+    }
+    body{
+        overflow: hidden;
+    }
+    .head1{
+        margin: 0%;
+        color: black;
+    }
+</style>
 </head>
-
-<body>
-    <!-- ******HEADER****** -->
-    <header class="header">
+<body >
+<div id="div1">
+    <h1 class="head1">Richardo Wijaya</h1>
+</div>
+<header class="header">
         <div class="container">
             <img class="profile-image img-responsive pull-left" src="assets/images/profile.png" alt="James Lee" />
             <div class="profile-content pull-left">
@@ -58,7 +120,8 @@
                     <div class="section-inner">
                         <h2 class="heading">About Me</h2>
                         <div class="content">
-                            <p>Graduate Bachelor of Information student with excellent work ethic and an ability to learn and adapt to changing environment. Graduated with a weighted average mark of 78 together with more than 2 years experiences, and internship and real-world project experience. Proved to be able to take on a wide range of tasks. Demonstrated excellent problem solving, working effectively in teams developing a professional relationship.</p>
+                            <p>Capable third-year student at Deakin University who is doing Bachelor of Information Technology with 80 weighted average score and more than 2 years experience. Coming from a background of mobile apps development and programming proves his ability to take on a wide range of tasks. Presently seeking to use obtained knowledge for the benefit of both parties. He is looking for a junior developer intern position within an organization that wants to recruit talented people with potential while extending my knowledge.
+                            </p>
 
                         </div><!--//content-->
                     </div><!--//section-inner-->
@@ -130,20 +193,8 @@ This is still initial release, get it while still free.</p>
                         <h2 class="heading">Relevant Experience</h2>
                         <div class="content">
                             <div class="item">
-                                <h3 class="title"><a href="https://www.energyumpire.com.au">Energy Umpire</a> WordPress, Angular</h3>
-                                <h3 class="title">Full Stack Developer<span class="place"></span> <span class="year">(June - Oct 2018)</span></h3>
-                                <p>Internship at Energy Umpire and is supervised by the unit supervisor and the higher-ups</p>
-                                <ul>
-                                  <li>Involvement in the main website of the organization using Wordpress.</li> 
-                                  <li>Created a custom email template for customer reports in HTML and angular.js.</li>
-                                  <li>Evaluated Google Ranking, Adwords, SEO, and Keyword Planner.</li>
-                                  <li>Created a dynamic Wordpress website that can be controlled from one template.</li>
-                                </ul>
-                            </div><!--//item-->
-                            <div class="item">
                                 <h3 class="title"><a href="https://www.gavl.com/">Gavl</a> - Voice to Bid</h3>
-                                <h3 class="title">Mobile App Developer <span class="place"></span> <span class="year">(Oct 2017 - June 2018)</span></h3>
-                                <p>Developed a Voice to Bid project which is a unit project from GAVL based on real-world group project and is supervised by the unit supervisor and the CTO of GAVL.</p>
+                                <h3 class="title">Developer - 8 Month/ 2 Trimester Work Project Unit <span class="place"></span> <span class="year">(2017 - 2018)</span></h3>
                                 <ul>
                                   <li>Implemented Firebase Real-time Database as the database of the application.</li>
                                   <li>Created the base application using Watson Speech to text which later changed to Google API.</li>
@@ -151,10 +202,32 @@ This is still initial release, get it while still free.</p>
                                   <li>Assisted in completing the NLC or machine learning</li>
                                 </ul>
                             </div><!--//item-->
+                            <div class="item">
+                                    <h3 class="title"><a href="https://www.energyumpire.com.au/">Gavl</a> - Voice to Bid</h3>
+                                    <h3 class="title">Developer - 8 Month/ 2 Trimester Work Project Unit <span class="place"></span> <span class="year">(2017 - 2018)</span></h3>
+                                    <ul>
+                                      <li>Implemented Firebase Real-time Database as the database of the application.</li>
+                                      <li>Created the base application using Watson Speech to text which later changed to Google API.</li>
+                                      <li>Assisted in creating manual input which relied on both UI and database.</li>
+                                      <li>Assisted in completing the NLC or machine learning</li>
+                                    </ul>
+                                </div><!--//item-->
                         </div><!--//content-->
                     </div><!--//section-inner-->
                 </section><!--//section-->
-                
+                <section class="github section">
+                   <div class="section-inner">
+                       <h2 class="heading">My GitHub</h2>
+                       <p><a href="https://github.com/dracon98" target="_blank">GitHub Calendar</a></p>
+
+                       <div id="github-graph" class="github-graph">
+
+                        <img class="img-responsive project-image" src="assets/images/github-chart.png">
+
+                       </div><!--//github-graph-->
+
+                   </div><!--//secton-inner-->
+               </section><!--//section-->
             </div><!--//primary-->
             <div class="secondary col-md-4 col-sm-12 col-xs-12">
                  <aside class="info aside section">
@@ -163,8 +236,8 @@ This is still initial release, get it while still free.</p>
                         <div class="content">
                             <ul class="list-unstyled">
                                 <li><i class="fa fa-map-marker"></i><span class="sr-only">Location:</span>Melbourne, Australia</li>
-                                <li><i class="fa fa-envelope-o"></i><span class="sr-only">Email:</span><a href="#">richardoalvin.war@gmail.com</a></li>
-                                <li><i class="fa fa-github"></i><span class="sr-only">Git:</span><a href="https://github.com/dracon98/">https://github.com/dracon98/</a></li>
+                                <li><i class="fa fa-envelope-o"></i><span class="sr-only">Email:</span><a href="#">rwijaya@deakin.edu.au</a></li>
+                                <li><i class="fa fa-envelope-o"></i><span class="sr-only">Email:</span><a href="https://github.com/dracon98/">https://github.com/dracon98/</a></li>
                             </ul>
                         </div><!--//content-->
                     </div><!--//section-inner-->
@@ -172,42 +245,34 @@ This is still initial release, get it while still free.</p>
 
                 <aside class="skills aside section">
                     <div class="section-inner">
-                        <h2 class="heading">Main Technical Skills</h2>
+                        <h2 class="heading">Technical Skills</h2>
                         <div class="content">
                           <div class="skillset">
 
 
 
                                 <div class="item">
-                                    <h3 class="level-title">Javascript, jQuery, Angular.Js </h3>
-                                    <span class="level-label">Intermediate</span>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="40%">
-                                        </div>
-                                    </div><!--//level-bar-->
-                                </div><!--//item-->
-
-                                <div class="item">
-                                    <h3 class="level-title">HTML5, CSS3, PHP</h3>
+                                    <h3 class="level-title">Javascript &amp; jQuery</h3>
                                     <span class="level-label">Intermediate</span>
                                     <div class="level-bar">
                                         <div class="level-bar-inner" data-level="60%">
                                         </div>
                                     </div><!--//level-bar-->
                                 </div><!--//item-->
+
                                 <div class="item">
-                                        <h3 class="level-title">.NET(C#,C++)</h3>
-                                        <span class="level-label">Intermediate</span>
-                                        <div class="level-bar">
-                                            <div class="level-bar-inner" data-level="50%">
-                                            </div>
-                                        </div><!--//level-bar-->
-                                    </div><!--//item-->
+                                    <h3 class="level-title">HTML5, CSS3,&amp; PHP</h3>
+                                    <span class="level-label">Intermediate</span>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="65%">
+                                        </div>
+                                    </div><!--//level-bar-->
+                                </div><!--//item-->
                                 <div class="item">
                                     <h3 class="level-title">Xcode / swift</h3>
                                     <span class="level-label" >Intermediate</span>
                                     <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="40%">
+                                        <div class="level-bar-inner" data-level="55%">
                                         </div>
                                     </div><!--//level-bar-->
                                 </div><!--//item-->
@@ -215,7 +280,7 @@ This is still initial release, get it while still free.</p>
                                     <h3 class="level-title">Android Studio / java</h3>
                                     <span class="level-label">Intermediate</span>
                                     <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="50%">
+                                        <div class="level-bar-inner" data-level="60%">
                                         </div>
                                     </div><!--//level-bar-->
                                 </div><!--//item-->
@@ -228,58 +293,34 @@ This is still initial release, get it while still free.</p>
                     <div class="section-inner">
                         <h2 class="heading">Key Skills</h2>
                         <div class="content">
-                            <h4>Personal Qualities</h4>
                           <div class="skillset">
                             <ul>
-                                <li>  
-                                    <div class="item">
-                                        <p class="level-title">Ability to identify and understand a complex problem and advise an effective solution.</p>
-                                    </div><!--//item-->
-                                </li>
-                                <li>
-                                    <div class="item">
-                                        <p class="level-title">Ability to communicate effectively with other people including the customers.</p>
-                                    </div><!--//item-->
-                                </li>
-                                <li>
-                                    <div class="item">
-                                        <p class="level-title">Liaised with every each of members of the team and work collaboratively.</p>
-                                    </div><!--//item-->
-                                </li>
-                                <li>
-                                    <div class="item">
-                                        <p class="level-title">Ability to multi-task & prioritize under ever changing & challenging workloads.</p>
-                                    </div><!--//item-->
-                                </li>
-                                <li>
-                                    <div class="item">
-                                        <p class="level-title">Ability to respond to pressure and meet tight deadlines.</p>
-                                    </div><!--//item-->
-                                </li>
-                            </ul>
+                              <li>
+                            <div class="item">
+                                <h3 class="level-title">Knowledge of: MySQL, SQL Server, UML, ERD, OO, XSLT, XML, Photoshop, Git</h3>
+                            </div><!--//item-->
+                          </li>
+                        <li>  <div class="item">
+                                    <h3 class="level-title">Experience of: IBM Watson, Firebase</h3>
+                                </div><!--//item-->
+                              </li>
+                              <li>  <div class="item">
+                                    <h3 class="level-title">Strong knowledge of relational database design and implementation</h3>
+                                </div><!--//item-->
+                                <li><div class="item">
+                                    <h3 class="level-title">Ability to identify and understand a complex problem and devise an effective solution</h3>
+                              </div><!--//item-->
+                            </li>
+                                <li><div class="item">
+                                    <h3 class="level-title">Excellent system (Windows) and mobile programming skills (Android/IOS)</h3>
+                                </div><!--//item-->
+                              </li>
+                              <li>
+                                <div class="item">
+                                    <h3 class="level-title">Ability to communicate effectively with other people including the customers</h3>
+                                </div><!--//item-->
+                              </li>
                             </div>
-                            <h4> Technical Proficiencies</h4>
-                            <div class="skillset">
-                              <ul>
-                                  <li>  
-                                      <div class="item">
-                                          <p class="level-title"><strong>Digital Marketing :</strong> SEO Optimisation, AdWords Campaign</p>
-                                      </div><!--//item-->
-                                  </li>
-                                  <li>
-                                      <div class="item">
-                                          <p class="level-title"><strong>Programming Languages :</strong> Java, XHTML, PHP, JavaScript, XML, XSLT, Swift, C#, C++, Angular.Js</p>
-                                      </div><!--//item-->
-                                  </li>
-                                  <li>
-                                      <div class="item">
-                                          <p class="level-title"><strong>Software :</strong> Microsoft Office (Word, Excel, Outlook, PowerPoint, Project), SQL,
-                                                WordPress, IBM, Visual Studio, Unreal Engine, Unity, Azure, Photoshop, Android Studio, Xcode,
-                                                Xamarin</p>
-                                      </div><!--//item-->
-                                  </li>
-                              </ul>
-                              </div>
                         </div><!--//content-->
                     </div><!--//section-inner-->
                 </aside><!--//section-->
@@ -290,7 +331,7 @@ This is still initial release, get it while still free.</p>
                             <div class="item">
                                 <h3 class="title"><i class="fa fa-graduation-cap"></i> Bachelor of Information Technology</h3>
                                 <h7> Programming &amp; Mobile Apps Development</h5>
-                                <h4 class="university">Deakin University <span class="year">(2017-2018)</span></h4>
+                                <h4 class="university">Deakin University <span class="year">(2017-2018S)</span></h4>
                             </div><!--//item-->
                             <div class="item">
                                 <h3 class="title"><i class="fa fa-graduation-cap"></i> Diploma of Computing</h3>
@@ -325,20 +366,52 @@ This is still initial release, get it while still free.</p>
                         <h2 class="heading">Agenda</h2>
                         <div class="content">
                             <ul class="list-unstyled">
-                                <li><i class="fa fa-calendar"></i> Self-Employee Project</li>
+                                <li><i class="fa fa-calendar"></i> <a href="https://energyumpire.com.au/" target="_blank">Internship at Energy Umpire</a></li>
                             </ul>
                         </div><!--//content-->
                     </div><!--//section-inner-->
                 </aside><!--//section-->
 
-                
+                <aside class="credits aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Credits</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><a href="http://getbootstrap.com/" target="_blank"><i class="fa fa-external-link"></i> Bootstrap</a></li>
+                                <li><a href="http://fortawesome.github.io/Font-Awesome/" target="_blank"><i class="fa fa-external-link"></i> FontAwesome</a></li>
+                                <li><a href="http://jquery.com/" target="_blank"><i class="fa fa-external-link"></i> jQuery</a></li>
+                                <li><a href="https://github.com/IonicaBizau/github-calendar" target="_blank"><i class="fa fa-external-link"></i> GitHub Calendar Plugin</a></li>
+
+                                <li><a href="http://caseyscarborough.com/projects/github-activity/" target="_blank"><i class="fa fa-external-link"></i> GitHub Activity Stream</a></li>
+
+                                <li><a href="https://github.com/sdepold/jquery-rss" target="_blank"><i class="fa fa-external-link"></i> jQuery RSS</a></li>
+
+                                <li>Profile image: <a href="https://www.flickr.com/photos/dotbenjamin/2577394151" target="_blank">Ben Smith</a></li>
+                                <li>iPad and iPhone mocks: <a href="https://dribbble.com/perlerar" target="_blank">Regy Perlera</a></li>
+
+                            </ul>
+
+                            <hr/>
+
+                             <p>This responsive portfolio template is handcrafted by UX designer <a href="https://www.linkedin.com/in/xiaoying" target="_blank">Xiaoying Riley</a> at <a href="http://themes.3rdwavemedia.com/" target="_blank">3rd Wave Media</a> for developers and is <strong>FREE</strong> under the <a class="dotted-link" href="http://creativecommons.org/licenses/by/3.0/" target="_blank">Creative Commons Attribution 3.0 License</a></p>
+                             <p>We will improve or add new features to this template based on users' feedback so follow us on twitter to get notified when a new version is out!</p>
+                            <a class="btn btn-cta-secondary btn-follow" href="https://twitter.com/3rdwave_themes" target="_blank"><i class="fa fa-twitter"></i> Follow us</a>
+                            <a class="btn btn-cta-primary btn-download" href="http://themes.3rdwavemedia.com/website-templates/free-responsive-website-template-for-developers/" target="_blank"><i class="fa fa-download"></i> I want to download</a>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
 
             </div><!--//secondary-->
         </div><!--//row-->
     </div><!--//masonry-->
 
     <!-- ******FOOTER****** -->
-   
+    <footer class="footer">
+        <div class="container text-center">
+                <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
+                <small class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+        </div><!--//container-->
+    </footer><!--//footer-->
 
     <!-- Javascript -->
     <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
@@ -353,5 +426,6 @@ This is still initial release, get it while still free.</p>
     <script type="text/javascript" src="assets/plugins/github-activity/src/github-activity.js"></script>
     <!-- custom js -->
     <script type="text/javascript" src="assets/js/main.js"></script>
+
 </body>
 </html>

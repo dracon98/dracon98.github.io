@@ -1,3 +1,5 @@
+
+ 
 jQuery(document).ready(function($) {
 
 
@@ -18,7 +20,137 @@ jQuery(document).ready(function($) {
         });
 
     });
+    var x = document.getElementById("item-list");
+    var y = x.getElementsByClassName("item row").length;
+for(i=0;i<y;i++){
+    if (i>2){
+        x.getElementsByClassName("item row")[i].style.display = "none";
+    }
+}
+        length.id = "hide";
+        document.getElementById("button-more").addEventListener("click", function(){
+            for(i=0;i<y;i++){
+            if(x.getElementsByClassName("item row")[i].style.display == "inline-block"){
+                    if (i>2){
+                        x.getElementsByClassName("item row")[i].style.display = "none";
+                    }
+                }
+            
+            else{
+                if (i>2){
+                    x.getElementsByClassName("item row")[i].style.display = "inline-block";
+                }
+            }
+        }
+        });
+        
+    $(function(){
+        
+        var list = document.getElementsByClassName("wordcheck");
+        for (i = 0; i < list.length; i++) {
+        var inner = list[i].innerHTML;
+        var word = inner.split(' ');
+        var num = word.length;
+        var init = 29;
+        var item = "";
+        for (j = 0; j < num; j++){
+          if (j===init){
+            item += word[j]+"<span class='collapsible'><u>More..</u></span><span class='context'>" + " ";
+        }
+        else if (j === num-1 && j>init){
+            item += word[j]+ "</span><span class='less'><u>Less..</u></span></p>";
+        }
+        else{
+            item += word[j] + " ";
+        }
+      }
+        list[i].innerHTML = item;
+    }
+     
+         var coll = document.getElementsByClassName("collapsible");
+ var i;
+ 
+ for (i = 0; i < coll.length; i++) {
+   coll[i].addEventListener("click", function() {
+     this.classList.toggle("active");
+     var content = this.nextElementSibling;
+     var less = content.nextElementSibling;
+       content.style.display = "inline";
+       this.style.display = "none";
+       less.style.display = "inline";
+      
+   });
+ }
+
+ var coll = document.getElementsByClassName("less");
+    var i;
     
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.previousElementSibling;
+        var more = content.previousElementSibling;
+          content.style.display = "none";
+          this.style.display = "none";
+          more.style.display = "inline";
+           
+      });
+    }
+    });
+    $(function(){
+        
+        var list = document.getElementsByClassName("maincheck");
+        for (i = 0; i < list.length; i++) {
+        var inner = list[i].innerHTML;
+        var word = inner.split(' ');
+        var num = word.length;
+        var init = 80;
+        var item = "";
+        for (j = 0; j < num; j++){
+          if (j===init){
+            item += word[j]+"<span class='collapsible'><u>More..</u></span><span class='context'>" + " ";
+        }
+        else if (j === num-1 && j>init){
+            item += word[j]+ "</span><span class='less'><u>Less..</u></span></p>";
+        }
+        else{
+            item += word[j] + " ";
+        }
+      }
+        list[i].innerHTML = item;
+    }
+     
+         var coll = document.getElementsByClassName("collapsible");
+ var i;
+ 
+ for (i = 0; i < coll.length; i++) {
+   coll[i].addEventListener("click", function() {
+     this.classList.toggle("active");
+     var content = this.nextElementSibling;
+     var less = content.nextElementSibling;
+       content.style.display = "inline";
+       this.style.display = "none";
+       less.style.display = "inline";
+      
+   });
+ }
+
+ var coll = document.getElementsByClassName("less");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.previousElementSibling;
+        var more = content.previousElementSibling;
+          content.style.display = "none";
+          this.style.display = "none";
+          more.style.display = "inline";
+           
+      });
+    }
+    });
+
     /* Bootstrap Tooltip for Skillset */
     $('.level-label').tooltip();
     
@@ -53,13 +185,5 @@ jQuery(document).ready(function($) {
         
         }
     );
-    
-    /* Github Calendar - https://github.com/IonicaBizau/github-calendar */
-    GitHubCalendar("#github-graph", "IonicaBizau");
-    
-    
-    /* Github Activity Feed - https://github.com/caseyscarborough/github-activity */
-    GitHubActivity.feed({ username: "caseyscarborough", selector: "#ghfeed" });
-
 
 });

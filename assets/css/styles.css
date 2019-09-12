@@ -548,6 +548,9 @@ iframe {
 .credits .btn {
   margin-bottom: 15px;
 }
+.skills ul {
+  padding-left: 0;
+}
 /* ======= Footer ======= */
 .footer {
   background: #32383e;
